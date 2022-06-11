@@ -1,3 +1,11 @@
+# Table of Contents
+
+* [Overview](https://github.com/claytonkreisel/poke-react-exercise#overview)
+* [Getting Started](https://github.com/claytonkreisel/poke-react-exercise#getting-started)
+* [Codebase Documentation](https://github.com/claytonkreisel/poke-react-exercise#codebase-documentation)
+* [Design Components](https://github.com/claytonkreisel/poke-react-exercise#design-components)
+* [End Product Requirements](https://github.com/claytonkreisel/poke-react-exercise#design-components)
+
 # Overview
 
 The purpose of this repo is to help you prepare for a technical coding interview. Typically this is done online while a tech interviewer watches in and you are "timeboxed." You are given a requirements doc (which is at the bottom of this readme) and told to work your way through it. In an ideal situation you are provided with the link to the repo and the requirements doc a little before the interview. Usually this is somewhere in the realm of 2-24 hours and you are told to become familiar with the project to get your environment setup and ready to go. This is also a good opportunity for you to start working out any technical desing or architecture using flowcharts and/or task lists.
@@ -44,7 +52,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 NOTE: If you get stuck in an infinite loop on a test you will need to kill that instance of node in your activity monitor on your machine in order to truly kill the test. Ctr + c does not end the node instance.
 
-## Codebase Documentation
+# Codebase Documentation
 
 ### Folder Structure
 
@@ -90,7 +98,7 @@ The parameter of `number` is optional and is a reference to the pokémon's poké
 
 This function exists to return an array of random `Pokemon` objects. If not provided with a `count` parameter then the function returns a single random pokémon from the dataset wrapped in an array. If provided a `count` parameter that number of randomly selected `Pokemon` objects will be returned in an array. By default duplicates are not allowed. In order to change this functionality to allow for duplicates of the same `Pokemon` to be returned simply provide a value of `true` for the `allowDuplicates` parameter. NOTE: `count` is maxed at 100. If a number larger than 100 is provided then only 100 `Pokemon` objects will be returned in the array.
 
-## Design Components
+# Design Components
 
 ### Ant Design
 
