@@ -14,13 +14,13 @@ In this exercise you are interviewing for a software engineer position and you h
 
 An acceptable branch commit can be found on the `excercise-clayton_kreisel` branch. On that branch you will be able to find a link in the top of the README.md file that will show you how I completed the exercise and will also give you some tips on how to rock your technical interview. NOTE: This should only be used after you have completed the exercise to learn from, DO NOT look at it before the end of your exercise.
 
-Also a working example of the app can be found [here](https://demos.claytonkreisel.com/pokemon-react/). Once again you should attempt to complete the exercise before you look at this example, although seeing the MVP prior to the end of your exercise is not going to keep you from learning from this exercise.
+Also a working example of the app can be found [here](https://demos.claytonkreisel.com/pokemon-react/){:target="_blank"}. Once again you should attempt to complete the exercise before you look at this example, although seeing the MVP prior to the end of your exercise is not going to keep you from learning from this exercise.
 
 Good luck and happy coding...
 
 # Getting Started
 
-In order to setup the exercise you will need to clone this project to your local machine. You will need to have `npm` installed in order for this app to function correctly. If you have not installed `npm` please do so [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+In order to setup the exercise you will need to clone this project to your local machine. You will need to have `npm` installed in order for this app to function correctly. If you have not installed `npm` please do so [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm){:target="_blank"}.
 
 After you have cloned this repo you will need to create a branch with your unique exercise name. Please use the following convention: `exercise-<firstname>_<lastname>`. You will use this branch to submit your work by pushing it to the repo after you have made your final commit locally. You **WILL NOT** be submitting a feature MR and **ARE NOT** permitted to push to the `main` branch.
 
@@ -40,7 +40,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000){:target="_blank"} to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -48,7 +48,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests){:target="_blank"} for more information.
 
 NOTE: If you get stuck in an infinite loop on a test you will need to kill that instance of node in your activity monitor on your machine in order to truly kill the test. Ctr + c does not end the node instance.
 
@@ -83,7 +83,7 @@ This directory already contains a sub-directory named `poke-tools` which contain
 
 #### The `tests` Directory
 
-This directory contains files that follow the naming convention of `*.test.js`. These files contain `test` methods that will be run using the `npm test` script in the console. These tests are used to test the code in your providers folder. Jest is used by react's testing script and more info on that can be found [here](https://jestjs.io/docs/getting-started).
+This directory contains files that follow the naming convention of `*.test.js`. These files contain `test` methods that will be run using the `npm test` script in the console. These tests are used to test the code in your providers folder. Jest is used by react's testing script and more info on that can be found [here](https://jestjs.io/docs/getting-started){:target="_blank"}.
 
 ### Helper Functions
 
@@ -101,7 +101,7 @@ This function exists to return an array of random `Pokemon` objects. If not prov
 
 ### Ant Design
 
-This project uses the Ant Design Component UI Kit. Documentation for these components can be found [here](https://ant.design/components/overview/). There are examples of how to use the needed components already in the starting codebase. You are not required to use any additional elements that are not already used, but you are welcome to if you see good reason to for the purposes of your project.
+This project uses the Ant Design Component UI Kit. Documentation for these components can be found [here](https://ant.design/components/overview/){:target="_blank"}. There are examples of how to use the needed components already in the starting codebase. You are not required to use any additional elements that are not already used, but you are welcome to if you see good reason to for the purposes of your project.
 
 # End Product Requirements
 
@@ -129,5 +129,5 @@ Your technical lead also has some requiremets you need to meet. The tech lead is
 5. The `ComparativeSection` component must contain two columns. Each of these columns will contain a select dropdown at the top of each column. These dropdowns will be populated with the values from the list in list 3 from the filtering section above. `onChange` on these select boxes will load that pokémon's stats into the comparison table below. When both comparison tables are loaded the stats on those comparisons tables will need to be highlighted with a light green (`#8cbf74`) background for the higher of the two numbers between the two pokémon and a light red (`#ffa7a8`) background for the lower of the two numbers (stat box backgrounds remain white if tied). The stats that are message are the properties on each `Pokemon` object and those are `hp`, `speed`, `attack`, `defense`, `specialAttack`, `specialDefense` and `total`. Stat boxes shall display a "--" in place of the number with a white background while not loaded.
 6. There is a reset button in the bottom right hand corner of the page. You will need to use the `antd` ui `Button` component in order to change the design of this button to have a red background with red letters. Please refer to the documentation for the ant design component kit for the best way to do this. `onClick` this button must clear all the lists in the `FilteringSection` component as well as the two comparison tables in the `ComparativeSection`.
 7. Make sure that all client-side console warnings are addressed and that you are not logging datasets or development messages to the console.
-8. All design components used are part of the `antd` UI kit. If you choose to use any additional components in this excercise they must be part of the `antd` UI kit which can be [found here](https://ant.design/components/overview/).
+8. All design components used are part of the `antd` UI kit. If you choose to use any additional components in this excercise they must be part of the `antd` UI kit which can be [found here](https://ant.design/components/overview/){:target="_blank"}.
 9. You are not allowed to add any additional `npm` packages. All you need to meet the requirements of this excercise is included in this project already. The only additional `npm` package added to this project that is not in `create-react-app` is `antd` for React components.
