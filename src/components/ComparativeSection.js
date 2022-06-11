@@ -6,7 +6,7 @@ import {
     Typography
 } from 'antd'
 
-export const ComparitiveSection = () => {
+export const ComparativeSection = () => {
     
     const selectOptions = [{value: "Option 1"}, {value: "Option 2"}]
     

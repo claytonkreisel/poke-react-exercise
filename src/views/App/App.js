@@ -18,7 +18,7 @@ export const App = () => {
       <Divider />
 
       {/* Comparative section goes here */}
-      <ComparitiveSection />
+      <ComparativeSection />
 
       <Divider />
 
