@@ -16,15 +16,21 @@ export const FilteringSection = () => {
         <Row gutter={[0, 32]}>
 
             {/* Filter by Type */}
-            <Col xs={24} xl={12} xxl={8}  style={{padding: "0px 48px"}}>
+            <Col xs={24} xl={12} xxl={8}  style={{paddingLeft: '48px', paddingRight: '48px'}}>
                 <Card title="Filter Pokémon by Type 1" extra={<Select options={selectOptions} placeholder="Select Type 1" />}>
                     <div
                         id="scrollableDiv"
                         style={{
-                            margin: "10px 0px",
+                            marginTop: '10px',
+                            marginBottom: '10px',
+                            marginLeft: '0px',
+                            marginRight: '0px',
                             height: 400,
                             overflow: 'auto',
-                            padding: '0 0px',
+                            paddingTop: '0px',
+                            paddingBottom: '0px',
+                            paddingLeft: '0px',
+                            paddingRight: '0px',
                             border: '1px solid rgba(140, 140, 140, 0.35)',
                         }}
                     >
@@ -38,7 +44,7 @@ export const FilteringSection = () => {
                                     return (
                                         <List.Item
                                             key={item.number}
-                                            style={{padding: "1px 16px"}}
+                                            style={{paddingTop: '1px', paddingBottom: '1px', paddingRight: '16px', paddingLeft: '16px'}}
                                         >
                                             <span style={{display: 'inline-block', marginRight: "10px", width: '28px', textAlign: "right"}}>#{item.number}</span> {item.name}
                                         </List.Item>
@@ -51,10 +57,10 @@ export const FilteringSection = () => {
             </Col>
 
             {/* Filter by Generation */}
-            <Col xs={24} xl={12} xxl={8} style={{padding: "0px 48px"}}></Col>
+            <Col xs={24} xl={12} xxl={8} style={{ppaddingLeft: '48px', paddingRight: '48px'}}></Col>
 
             {/* List of union between two filters */}
-            <Col xs={24} xxl={8} style={{padding: "0px 48px"}}></Col>
+            <Col xs={24} xxl={8} style={{paddingLeft: '48px', paddingRight: '48px'}}></Col>
         </Row>
     )
 }

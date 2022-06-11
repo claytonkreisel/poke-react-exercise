@@ -22,6 +22,7 @@ export const App = () => {
 
       <Divider />
 
+      {/* Reset sectino goes here */}
       <ResetSection />
 
     </Layout>

@@ -14,7 +14,7 @@ export const ComparativeSection = () => {
         <Row gutter={[0, 32]} style={{marginBottom: '40px'}}>
 
             {/* Pokémon 1 */}
-            <Col xs={24} md={12} xl={{span: 10, offset: 2}} xxl={{span: 7, offset: 5}} style={{padding: '0px 48px'}}>
+            <Col xs={24} md={12} xl={{span: 10, offset: 2}} xxl={{span: 7, offset: 5}} style={{paddingLeft: '48px', paddingRight: '48px'}}>
                 <Card title="Pokémon 1" extra={<Select options={selectOptions} placeholder="Select a pokémon" />}>
                     <Card.Grid hoverable={false}  style={{width: '50%', textAlign: 'center', background: '#8cbf74'}}>
                         <Typography.Text><h4>Attack</h4></Typography.Text>
@@ -40,7 +40,7 @@ export const ComparativeSection = () => {
             </Col>
 
             {/* Pokémon 2 */}
-            <Col xs={24} sm={12} md={7} xl={20} xxl={7} style={{padding: "0px 48px"}}></Col>
+            <Col xs={24} sm={12} md={7} xl={20} xxl={7} style={{paddingLeft: '48px', paddingRight: '48px'}}></Col>
         </Row>
     )
 }
