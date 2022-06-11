@@ -22,7 +22,7 @@ Good luck and happy coding...
 
 In order to setup the exercise you will need to clone this project to your local machine. You will need to have `npm` installed in order for this app to function correctly. If you have not installed `npm` please do so [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-After you have cloned this repo you will need to create a branch with your unique exercise name. Please use the following convention: `exercise-<firstname>_<lastname>`. You will use this branch to submit your work by pushing it to the repo after you have made your final commit locally. You WILL NOT be submitting a feature MR and ARE NOT permitted to push to the `main` branch.
+After you have cloned this repo you will need to create a branch with your unique exercise name. Please use the following convention: `exercise-<firstname>_<lastname>`. You will use this branch to submit your work by pushing it to the repo after you have made your final commit locally. You **WILL NOT** be submitting a feature MR and **ARE NOT** permitted to push to the `main` branch.
 
 After creating your local branch console into the project `root` directory and run the following commands:
 
@@ -80,7 +80,7 @@ This directory is where you will put any newly created components for your app. 
 
 This directory is where you will house any helper functions or objects that you create for your app.
 
-This directory already contains a sub-directory named `poke-tools` which contains a `pokeTools.js` file that houses our fetching functions for the main dataset for this app which is found in the `pokemon.json` file also in this subdirectory. There is no need to edit any code in the `poke-tools` directory. Though as part of this exercise you will need to fix the unit tests that are failing for these functions you will not need to edit these functions yourself.
+This directory already contains a sub-directory named `poke-tools` which contains a `pokeTools.js` file that houses our fetching functions ([documented below](https://github.com/claytonkreisel/poke-react-exercise#helper-functions)) for the main dataset for this app which is found in the `pokemon.json` file also in this subdirectory. There is no need to edit any code in the `poke-tools` directory. Though as part of this exercise you will need to fix the unit tests that are failing for these functions you will not need to edit these functions yourself.
 
 #### The `tests` Directory
 
