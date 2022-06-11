@@ -67,7 +67,6 @@ src
 |__tests
 |__views
 |__index.js
-|__setupTests.js
 ```
 
 For the purposes of this exercise you can ignore the `index.js` and `setupTests.js` files as well as the `views` directory.
