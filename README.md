@@ -4,7 +4,7 @@
 * [Getting Started](https://github.com/claytonkreisel/poke-react-exercise#getting-started)
 * [Codebase Documentation](https://github.com/claytonkreisel/poke-react-exercise#codebase-documentation)
 * [Design Components](https://github.com/claytonkreisel/poke-react-exercise#design-components)
-* [End Product Requirements](https://github.com/claytonkreisel/poke-react-exercise#design-components)
+* [End Product Requirements](https://github.com/claytonkreisel/poke-react-exercise#end-product-requirements)
 
 # Overview
 
