@@ -16,7 +16,7 @@ In this exercise you are interviewing for a software engineer position and you h
 
 An acceptable branch commit can be found on the `excercise-clayton_kreisel` branch. On that branch you will be able to find a link in the top of the README.md file that will show you how I completed the exercise and will also give you some tips on how to rock your technical interview. NOTE: This should only be used after you have completed the exercise to learn from, DO NOT look at it before the end of your exercise.
 
-Also a working example of the app can be found here. Once again you should attempt to complete the exercise before you look at this example, although seeing the MVP prior to the end of your exercise is not going to keep you from learning from this exercise.
+Also a working example of the app can be found [here](https://demos.claytonkreisel.com/pokemon-react/). Once again you should attempt to complete the exercise before you look at this example, although seeing the MVP prior to the end of your exercise is not going to keep you from learning from this exercise.
 
 Good luck and happy coding...
 
