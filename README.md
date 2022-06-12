@@ -117,7 +117,7 @@ Below this there will be a section that will allow the end-user to select two po
 
 There is also a *reset* button at the bottom of the page. When this button is clicked it will need to clear all the lists in the filtering section and also clear the comparison tables as well.
 
-Your technical lead also has some requiremets you need to meet. The tech lead is requiring for you to provide passing unit tests on all functions and object methods written in the providers folder (although not on react components). Some of the tests in the `Pokedex.test.js` file are passing and others are failing. You will need to figure out how to get those unit tests to pass by fixing the broken tests. For the purposes of this exercise we will assert that the functions being tested are sound and that the tests are actually what are broken and need to be fixed.
+Your technical lead also has some requiremets you need to meet. The tech lead is requiring for you to provide passing unit tests on all functions and object methods written in the providers folder (although not on react components). Some of the tests in the `PokeTools.test.js` file are passing and others are failing. You will need to figure out how to get those unit tests to pass by fixing the broken tests. For the purposes of this exercise we will assert that the functions being tested are sound and that the tests are actually what are broken and need to be fixed.
 
 ## Feature List and Development Tests Required for Acceptable MVP
 
