@@ -27,7 +27,7 @@ After you have cloned this repo you will need to create a branch with your uniqu
 After creating your local branch console into the project `root` directory and run the following commands:
 
 ```
-npm install
+npm install //this process could take a while becuse antd is a large package... don't worry it didn't hang
 npm start
 ```
 
