@@ -31,7 +31,8 @@ npm install
 npm start
 
 /*
-the npm install command can take a while to run and it may appear to be hung at times. Give it a few minutes but if it doesn't ultimately work for you you can use npm update
+* The npm install command can take a while to run and it may appear to be hung at times.
+* Give it a few minutes but if it doesn't ultimately work for you you can use npm update
 */
 ```
 
