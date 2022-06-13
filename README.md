@@ -28,6 +28,7 @@ After creating your local branch console into the project `root` directory and r
 
 ```
 npm install //this process could take a while becuse antd is a large package... don't worry it didn't hang
+//npm update can be used if you are having trouble with npm install
 npm start
 ```
 
