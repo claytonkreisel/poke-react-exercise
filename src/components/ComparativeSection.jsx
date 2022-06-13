@@ -1,10 +1,7 @@
 import {useState, useMemo, useContext, useCallback, useEffect} from 'react'
 import {
     Row,
-    Col,
-    Card,
-    Select,
-    Typography
+    Col
 } from 'antd'
 import { pokemonDetailsContext } from './PokemonDetailsProvider'
 import { ComparisonTable } from './ComparisonTable'

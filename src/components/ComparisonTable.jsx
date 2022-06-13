@@ -44,6 +44,14 @@ export const ComparisonTable = (props) => {
 
     return (
         <Card title={props.title} extra={<Select options={props.options} value={(pokemon) ? pokemon.number : null} onChange={handleOnChange} placeholder="Select a pokémon" />}>
+            <Card.Grid hoverable={false} style={getTableCellStyle()}>
+                <Typography.Text><h4>Type 1</h4></Typography.Text>
+                <Typography.Text><h5>{(pokemon) ? pokemon.type1 : "--"}</h5></Typography.Text>
+            </Card.Grid>
+            <Card.Grid hoverable={false} style={getTableCellStyle()}>
+                <Typography.Text><h4>Type 2</h4></Typography.Text>
+                <Typography.Text><h5>{(pokemon) ? pokemon.type2 : "--"}</h5></Typography.Text>
+            </Card.Grid>
             <Card.Grid hoverable={false}  style={getTableCellStyle('hp')}>
                 <Typography.Text><h4>HP</h4></Typography.Text>
                 <Typography.Text><h5>{(pokemon) ? pokemon.hp : "--"}</h5></Typography.Text>

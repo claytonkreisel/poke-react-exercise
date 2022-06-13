@@ -15,14 +15,14 @@ export const FilteringSection = () => {
     //STATE
     const [listOneItems, setListOneItems] = useState([])
     const [listTwoItems, setListTwoItems] = useState([])
-    const [listOneFilter, setListOneFilter] = useState("")
-    const [listTwoFilter, setListTwoFilter] = useState("")
+    const [listOneFilter, setListOneFilter] = useState([])
+    const [listTwoFilter, setListTwoFilter] = useState([])
     const [pokemonDetails, setPokemonDetails] = useContext(pokemonDetailsContext)
 
     //ON COMPONENT FIRST MOUNT
     useEffect(() => {
 
-        if(pokemonDetails.length > 0) return
+        console.log('fires')
 
         const allPokemon =  getPokemon()
 
@@ -41,13 +41,30 @@ export const FilteringSection = () => {
         allGenerations.sort()
         
         //Set the display lists
-        setListOneItems(allPokemon)
-        setListTwoItems(allPokemon)
+        setListOneItems([])
+        setListTwoItems([])
 
         //Set filters
-        setListOneFilter("")
-        setListTwoFilter("")
+        setListOneFilter([])
+        setListTwoFilter([])
     
+    }, [])
+
+    //HANDLE RESET AND POKEMON DETAILS CONTEXT CHANGE
+    useEffect(() => {
+
+        if(pokemonDetails.length > 0) return
+
+        if(getListCount(1) === 0){
+            setListOneItems([])
+            setListOneFilter([])
+        }
+
+        if(getListCount(2) === 0){
+            setListTwoItems([])
+            setListTwoFilter([])
+        }
+
     }, [pokemonDetails])
 
     //MEMOIZED VALUES
@@ -75,25 +92,45 @@ export const FilteringSection = () => {
 
     //EVENT LISTENERS
     const handleFilterOneOnChange = useCallback((v) => {
-        const newList = allPokemon.filter(item => item.type1 === v)
+        const newFilter = v
+        const newList = allPokemon.filter(item => newFilter.includes(item.type1) || newFilter.includes(item.type2))
         setListOneItems(newList)
-        setListOneFilter(v)
+        setListOneFilter(newFilter)
         setPokemonDetails(newList.filter(item => listTwoItems.includes(item)))
     }, [allPokemon, listTwoItems, setPokemonDetails])
 
     const handleFilterTwoOnChange = useCallback((v) => {
-        const newList = allPokemon.filter(item => item.generation === v)
+        const newFilter = v
+        const newList = allPokemon.filter(item => newFilter.includes(item.generation))
         setListTwoItems(newList)
-        setListTwoFilter(v)
+        setListTwoFilter(newFilter)
         setPokemonDetails(newList.filter(item => listOneItems.includes(item)))
     }, [allPokemon, listOneItems, setPokemonDetails])
+
+    //HELPER FUNCTIONS
+    /**
+     * This will tell you how many items exist in the asked about filter list
+     * @param {integer} listNumber - Needs be either 1, 2 or 3
+     */
+    const getListCount = (listNumber) => {
+        switch(listNumber){
+            case 1:
+                return listOneItems.length
+            case 2:
+                return listTwoItems.length
+            case 3:
+                return pokemonDetails.length
+            default:
+                return null
+        }
+    }
 
     return (
         <Row gutter={[0, 32]}>
 
             {/* Filter by Type */}
             <Col xs={24} xl={12} xxl={8}  style={{paddingRight: '48px', paddingLeft: '48px'}}>
-                <Card title="Filter Pokémon by Type 1" extra={<Select options={listOneOptions} onChange={handleFilterOneOnChange} value={listOneFilter || null} placeholder="Select Type 1" />}>
+                <Card title="Filter Pokémon by Type" extra={<Select allowClear size="middle" mode="multiple" options={listOneOptions} onChange={handleFilterOneOnChange} style={{minWidth: '200px'}} value={(listOneFilter.length > 0) ? listOneFilter : []} placeholder="Select Type" />}>
                     <div
                         id="scrollableDiv"
                         style={{
@@ -134,7 +171,7 @@ export const FilteringSection = () => {
 
             {/* Filter by Generation */}
             <Col xs={24} xl={12} xxl={8} style={{paddingRight: '48px', paddingLeft: '48px'}}>
-            <Card title="Filter Pokémon by Generation" extra={<Select options={listTwoOptions} onChange={handleFilterTwoOnChange} value={listTwoFilter || null} placeholder="Select Generation" />}>
+            <Card title="Filter Pokémon by Generation" extra={<Select allowClear size="middle" mode="multiple" options={listTwoOptions} style={{minWidth: '200px'}} onChange={handleFilterTwoOnChange} value={(listTwoFilter.length > 0) ? listTwoFilter : []} placeholder="Select Generation" />}>
                     <div
                         id="scrollableDiv"
                         style={{
