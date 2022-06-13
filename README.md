@@ -27,9 +27,12 @@ After you have cloned this repo you will need to create a branch with your uniqu
 After creating your local branch console into the project `root` directory and run the following commands:
 
 ```
-npm install //this process could take a while becuse antd is a large package... don't worry it didn't hang
-//npm update can be used if you are having trouble with npm install
+npm install
 npm start
+
+/*
+the npm install command can take a while to run and it may appear to be hung at times. Give it a few minutes but if it doesn't ultimately work for you you can use npm update
+*/
 ```
 
 You will now be able to begin developing the react app in the `src` folder and you will have a console message telling you where to view the app in browser. NOTE: For the purposes of this exercise the `tests` folder is located inside of the `src` folder and all tests are stored and executed from there.
